@@ -8,7 +8,3 @@
 - Suggests reminder intervals for water drinking.
 - Handles invalid inputs using exception handling.
 - Tested using pytest for accuracy and reliability.
-
-## How to Use 
-
-1. Clone the repo: 

@@ -8,6 +8,7 @@
 - Suggests reminder intervals for water drinking.
 - Handles invalid inputs using exception handling.
 - Tested using pytest for accuracy and reliability.
+- Recommends ideal water temperature based on age (cool, room temp, or lukewarm).
 
 ## Usage:
 

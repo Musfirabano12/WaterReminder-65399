@@ -1,14 +1,12 @@
-# test_water_reminder.py
-
-import pytest
 from water_reminder import calculate_water_intake, reminder_interval
 
 def test_calculate_water_intake():
-    assert calculate_water_intake(60, 25) == 2.4  # young adult
-    assert calculate_water_intake(70, 40) == 2.45  # middle-aged
-    assert calculate_water_intake(80, 60) == 2.4  # senior
+    assert calculate_water_intake(60, 25) == (2.4, "Cool water is recommended.")
+    assert calculate_water_intake(70, 40) == (2.45, "Room temperature water is recommended.")
+    assert calculate_water_intake(80, 60) == (2.4, "Lukewarm water is recommended for elders.")
 
 def test_calculate_water_intake_invalid():
+    import pytest
     with pytest.raises(ValueError):
         calculate_water_intake(-50, 25)
     with pytest.raises(ValueError):
